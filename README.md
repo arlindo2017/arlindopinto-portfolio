@@ -17,3 +17,4 @@ https://github.com/arlindo2017/arlindopinto-portfolio
 - CSS mouse over animations
 - Bookmarks
 - Responsive layouts
+- Reset CSS
