@@ -1,24 +1,31 @@
+/* Custom Variables */
 :root{
-    --font-family-ui: "Inter", sans-serif;
+    --font-family: "Inter", sans-serif;
     --teal:#00ADB5;
     --dark:#1E1E1E;
     --white:#EEEEEE;
     --gray:#393E46;
     --dark-gray:#222831;
+    --light-gray:#DCDCDC;
     --orange:#D2691E;
-    --opacity:(0.8);
 }
 
+/* Global Styling */
+* {
+    font-family: var(--font-family);
+}
 body {
     line-height: 1.3;
     color: var(--white);
     background-color: var(--dark-gray);
 }
 
-body,header,footer,nav{
+body,
+header,
+footer,
+nav{
     max-width: 1200px;
     margin: auto;
-
 }
 
 h1 {
@@ -29,27 +36,6 @@ h2 {
     font-size: 150%;
 }
 
-/* header   */
-nav {
-    display: flex;
-    position: fixed;
-    top: 0;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 20px 60px 20px 20px;
-    /* color: var(--white); */
-    width: 100%;
-    background-color: var(--dark);
-    /* border-bottom: solid 0.5px var(--white); */
-} 
-
-nav ul, .contact-info-body ul{
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-end;
-    min-width: 300px;
-}
-  
 a {
     font-weight: bold;
     text-decoration: none;
@@ -60,49 +46,10 @@ a:hover{
     color:var(--teal);
 }
 
-/* Background Cover */
-.top-banner, 
-.bottom-banner {
-    height: 250px;
-    margin: 0px 0px 0px 0px;
-    background-image: url("../img/stone-bg.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
 .font-highlighter {
     color: var(--teal);
 }
-.card-header {
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    background-color: var(--dark);
-    /* padding: 20px; */
-    height: 50px;
-    /* margin: 20px 20px 0px 20px; */
-    margin-top: 50px;
-    border-radius: 10px 10px 0 0;
-   
-}
 
-.card-header h2 {
-    color: var(--white);
-    padding: 5px 0px 5px 30px;
-    height: 20px;
-}
-
-.card-body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    color: var(--dark);
-    padding: 10px;
-    border-radius: 0 0 10px 10px;
-    border: solid 1px var(--dark);
-    background-color: var(--white);
-}
 .btn{
     color: var(--dark);
     padding: 10px;
@@ -112,135 +59,201 @@ a:hover{
     color: var(--white);
 }
 
-.my-work-items{
-    width:50%;
-    padding: 25px;
-    /* min-width: 250px; */
-    max-width: 400px;
-}  
-
-.card-body article img{
-    width:100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 var(--dark);
-}  
-
-.my-work-items img:hover {
-    box-shadow: 0 4px 8px 0 var(--teal);
+/* Bootstrap Icons Formatting */
+.bi {
+    font-size: 40px;
+    padding: 30px 30px;
+    color: var(--white);
+    justify-content: center; 
 }
 
-#about-me-text {
-    padding: 20px;
+.bi:hover {
+    color: var(--teal);
+ }
+
+/* Header */
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 60px 20px 20px;
+    width: 100%;
+    background-color: var(--dark);
+} 
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    min-width: 300px;
+}
+  
+/* Background Banners */
+.top-banner, 
+.bottom-banner {
+    height: 250px;
+    margin: 0;
+    background-image: url("../img/stone-bg.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-#about-me-text h1 {
-    padding-bottom: 20px;
+/* Card Formatting */
+.card-header {
+    display: flex;
+    align-items: center;
+    background-color: var(--dark);
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 10px 10px 0 0;
+   
+}
+
+.card-header h2 {
+    color: var(--white);
+    padding: 5px 0px 5px 30px;
+}
+
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    border: solid 1px var(--dark);
+    color: var(--dark);
+    background-color: var(--white);
+    padding: 10px;
+}
+
+.about-me-text {
+    padding: 30px;
 }
 
 #about-me-text div {
-    float: right;
-    padding-left: 20px;
-    padding: 20px;
+    float: left;
     width: 75%;
+    padding-left: 20px;
 }
 
 #profile-pic {
     float: left;
-    width: 200px;
+    max-width: 15%;
+    min-width: 100px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 var(--dark);
+    margin: 10px;
 }
 
-.contact-cards {
-    display:flex;
-    align-items: center;
-    justify-content: space-evenly; 
-    padding-top: 30px;
-     
-}
-
-/* .contact-cards article {
+/* My Work Items */
+.work-items-body{
     display: flex;
-    height: 200px;
-    width: 33%;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .contact-cards article:hover {
-    background-color: var(--gray);
-} */
-
-.contact-icons{
-    font-size: 50px;
-    padding-top: 30px;
-    color: var(--teal);
-    justify-content: center;
-    
-}
-
-.contact-icons:hover {
-   color: var(--orange);
-}
-
-.bs-linebreak {
-    height:1px;
     background-color: var(--white);
-  }
+    border-radius: 0 0 10px 10px;
+    border: solid 1px var(--dark);
+    color: var(--dark);
+    padding: 10px;
+}  
 
-footer {
-    margin-top: 30px;
-    /* height: 300px; */
-    background-color: var(--dark);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.work-items{
+    border: solid var(--dark) 1px;
+    margin: 10px; 
+    padding: 10px;
+    min-height: 500px; 
+    border-radius: 0 0 10px 10px;
+} 
+
+.work-items:nth-child(odd) { 
+    background:var(--light-gray); 
 }
+
+
+.work-items img{
+    max-width: 100%;
+}   
+.work-items img:hover {
+    box-shadow: 0 4px 8px 0 var(--dark);
+} 
+
+.flex-grow1 {
+    flex-basis: 75%;
+}
+
+/*Contact Cards */
+.contact-card-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: var(--dark);
+    padding: 40px;
+}
+
+.contact-cards { 
+    display: block;
+    text-align: center;
+    border: solid 1px var(--white);
+    border-radius: 10px;
+    width: 30%;
+    padding: 20px;
+}
+
+
 
 @media screen and (max-width: 890px) {
     nav {
         display: block;
     }
-    .my-work-items{
-        width:50%;
-        padding: 20px;
-        min-width: 250px;
-    } 
     nav ul{
-        display: flex;
-        justify-content: space-between;
-        align-content: flex-end;
-        min-width: 250px;
+        justify-content:left;
     }
-    .contact-cards {
-        display:block;
+    nav ul li{
+        padding-right: 30px;
     }
-    .contact-icons{
-        font-size: 25px;
-        color: var(--teal);
-        justify-content: center;
+    .work-items-body{
+        display: block;
+        /* max-width: 300px;   */
     }
-}
+    .work-items{
+        min-height: 200px;
+    } 
+    /* .contact-card-body{
+        display: block;
+        align-items: center;
+        padding: 10px;
+    } */
+} 
 
 @media screen and (max-width: 320px) {
     nav {
-        display: block;
+        display: block;  
     }
-    .my-work-items{
-        width:100%;
-        padding: 20px;
-        min-width: 200px;
-    } 
     nav ul{
-        display: flex;
-        justify-content: space-between;
-        align-content: flex-end;
-        min-width: 200px;
+        justify-content:left;
     }
-    .contact-cards {
-        display:block;
+    nav ul li{
+        padding-right: 30px;
     }
-    .contact-icons{
-        font-size: 16px;
-        color: var(--teal);
-        justify-content: center;
+    .work-items-body{
+        display: block;  
     }
+    .work-items{
+        min-height: 100%;
+    } 
+    .contact-card-body{
+        display: block;
+        align-items: center;
+        padding: 10px;
+    }
+    .bi,
+    .bi h2 {
+        font-size: 20px;
+    }
+    .contact-cards{
+        width: 100%;
+        padding: 0px;
+        margin:10px 0 10px 0;
+    }
+  
 }
