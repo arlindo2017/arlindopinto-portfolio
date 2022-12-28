@@ -33,7 +33,11 @@ h1 {
 }
   
 h2 {
-    font-size: 150%;
+    font-size: 160%;
+}
+
+h3{
+    font-size: 130%; 
 }
 
 a {
@@ -49,16 +53,21 @@ a:hover{
 .font-highlighter {
     color: var(--teal);
 }
-
+/* Buttons */
 .btn{
-    color: var(--dark);
     padding: 10px;
+    border-radius: 10px;
 }
-.btn:hover,
-.btn:hover a{
+.btn-outline-dark a{
+    color: var(--dark);
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:hover a{
     background-color: var(--dark);
     color: var(--white);
 }
+
 
 /* Bootstrap Icons Formatting */
 .bi {
@@ -70,6 +79,11 @@ a:hover{
 
 .bi:hover {
     color: var(--teal);
+ }
+
+ .bi-box-arrow-up-right{
+    color: var(--dark);
+    margin-right: 10px;
  }
 
 /* Header */
@@ -155,16 +169,34 @@ nav ul{
     border-radius: 0 0 10px 10px;
     border: solid 1px var(--dark);
     color: var(--dark);
-    padding: 10px;
-}  
+}
 
 .work-items{
     border: solid var(--dark) 1px;
     margin: 10px; 
-    padding: 10px;
     min-height: 500px; 
     border-radius: 0 0 10px 10px;
 } 
+.work-items a{
+    color: var(--dark);
+}
+
+.work-items a:hover{
+    color: var(--teal);
+}
+
+.work-items h3{
+    margin: 10px;
+    border-bottom: 1px solid var(--dark);
+}
+
+.work-items, .bi-box-arrow-up-right{
+    margin-left: 10px;
+}
+
+.work-items p{
+    margin: 0 0 30px 10px;
+}
 
 .work-items:nth-child(odd) { 
     background:var(--light-gray); 
@@ -178,7 +210,7 @@ nav ul{
 } 
 
 .flex-grow1 {
-    flex-basis: 75%;
+    flex-basis: 50%;
 }
 
 /*Contact Cards */
@@ -214,6 +246,7 @@ nav ul{
     }
     .work-items{
         min-height: 200px;
+        padding-bottom: 50px;
     } 
     .flex-grow1 img{
         max-height: 300px;
