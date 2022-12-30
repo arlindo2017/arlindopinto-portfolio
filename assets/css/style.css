@@ -11,9 +11,6 @@
 }
 
 /* Global Styling */
-* {
-    font-family: var(--font-family);
-}
 body {
     line-height: 1.3;
     color: var(--white);
@@ -72,7 +69,6 @@ a:hover{
 /* Icon Formatting */
 .contact-me-icons {
     font-size: 40px;
-    /* padding-bottom: 80px; */
     color: var(--white);
     justify-content: center; 
 }
@@ -152,11 +148,9 @@ nav ul li {
 .about-me-body{
     padding: 30px 30px;
 }
-
 .about-me-text {
     padding: 30px;
 }
-
 #profile-pic {
     float: left;
     max-width: 15%;
@@ -164,6 +158,9 @@ nav ul li {
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 var(--dark);
     margin: 10px 40px 10px 10px;
+}
+.about-me-card-bottom {
+    margin: 10px;
 }
 
 /* My Work Items Section */
@@ -199,10 +196,6 @@ nav ul li {
     margin: 20px 0 20px 0;
 } 
 
-.about-me-card-bottom {
-    margin: 10px;
-}
-
 .work-items:nth-child(odd) { 
     background:var(--light-gray); 
 }
@@ -221,7 +214,7 @@ nav ul li {
 
 #bookmark-mywork {
     position:relative;
-    top: -55px;
+    top: -40px;
 }
 
 /*Contact Cards */
