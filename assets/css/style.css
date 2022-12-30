@@ -18,12 +18,12 @@ body {
     line-height: 1.3;
     color: var(--white);
     background-color: var(--light-gray);
+    font-family: var(--font-family);
 }
 
 body,
 header,
-footer,
-nav{
+footer{
     max-width: 1200px;
     margin: auto;
 }
@@ -92,17 +92,23 @@ nav {
     position: fixed;
     top: 0;
     justify-content: space-between;
-    align-items: baseline;
-    padding: 20px 40px 20px 20px;
     width: 100%;
+    max-width: 1200px; 
     background-color: var(--dark);
+    align-items: center;
 } 
+
+nav h1{
+    padding-left: 20px;
+}
 
 nav ul{
     display: flex;
-    justify-content: space-between;
-    align-content: flex-end;
-    min-width: 300px;
+}
+
+nav ul li {
+    padding: 20px;
+    
 }
   
 /* Background Banners */
@@ -225,7 +231,7 @@ nav ul{
     justify-content: space-between; 
     background-color: var(--dark);
     /* padding: 40px; */
-    padding: 30px 10px 30px 10px;
+    padding: 30px 30px 30px 30px;
 }
 
 .contact-cards { 
@@ -233,8 +239,8 @@ nav ul{
     text-align: center;
     border: solid 1px var(--white);
     border-radius: 10px;
-    width: 32%;
-    padding: 30px;
+    width: 25%;
+    padding: 20px;
 }
 .contact-cards h4{
     margin-top: 20px;
@@ -249,7 +255,8 @@ nav ul{
         justify-content:left;
     }
     nav ul li{
-        padding-right: 30px;
+        padding: 5px 0 5px 30px;
+
     }
     .work-items-body{
         display: block;
@@ -271,8 +278,9 @@ nav ul{
         margin:10px 0 10px 0;
     } 
     #about-me-text div {
+    display: block;
     float: left;
-    width: 75%;
+    width: 100%;
     padding-left: 20px;
     }
 } 
@@ -287,10 +295,15 @@ nav ul{
     .bottom-banner {
     height: 50px;
     }
+    #about-me-text div {
+        float: left;
+        width: 100%;
+        padding-left: 20px;
+    }
 }
 
 @media screen and (max-width: 420px) {
-   *{
+   body{
     font-size: 95%;
    }
     a{
