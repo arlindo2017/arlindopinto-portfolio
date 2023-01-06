@@ -9,7 +9,7 @@ https://arlindo2017.github.io/arlindopinto-portfolio/
 https://github.com/arlindo2017/arlindopinto-portfolio
 
 ### Webpage Picture
-![Portfolio has a profile, some work samples and how to contact me.](./assets/img/portfolio-page.jpg)
+![Portfolio has a profile, some work samples and how to contact me.](./assets/img/portfolio-page-fullpage.jpg)
 
 ## Skills on display
 - Semantic HTML.
